@@ -1,0 +1,275 @@
+@media (prefers-color-scheme: light) {
+  :root {
+   --primary-background: oklch(from #d7d6a2 calc(l * .97) c h);
+  --secondary-background: #e7e7c5;
+  --primary-color-text: #2c2c13;
+  --hightlight-color: #ba6600;
+  --cards-color: #e1dfa5;
+  --icon-color: #68672e;
+  --secondary-hightlight: #38a100;
+  --secondary-border-color: #505019;
+  --description-text-second: #525013;
+  --description-text-primary: #727028;
+  --secondary-color: #ff2424;
+  --bubble-color: #e0deae;
+  --secondary-color-text: #e0deae;
+  --secondary-bubble-color: #b6ac59;
+   color-scheme: light;
+  }
+}
+
+html[data-theme="light"] {
+  --primary-background: oklch(from #d7d6a2 calc(l * .97) c h);
+  --main-color: #995400;
+  --secondary-background: #e7e7c5;
+  --primary-color-text: #2c2c13;
+  --hightlight-color: #ba6600;
+  --cards-color: #e1dfa5;
+  --icon-color: #68672e;
+  --secondary-hightlight: #38a100;
+  --secondary-border-color: #505019;
+  --description-text-second: #525013;
+  --description-text-primary: #727028;
+  --secondary-color: #ff2424;
+  --bubble-color: #e0deae;
+  --secondary-color-text: #e0deae;
+  --secondary-bubble-color: #b6ac59;
+}
+
+:root {
+ --base-color: 	#6c7ca7;
+ --main-color: oklch(from var(--base-color) calc(l * 15) calc(c * 6) calc(h * 1));
+ --secondary-color: oklch(from var(--base-color) calc(l * 0.9) calc(c * 0.17) calc(h * 1));
+ --icon-color: oklch(from var(--base-color) calc(l * .8) calc(c * .2) calc(h * 97));
+ --hightlight-color: oklch(from var(--base-color) calc(l * 1.2) calc(c * 8) calc(h * 29));
+ --secondary-hightlight: oklch(from var(--base-color) calc(l * 1) calc(c * 1.8) h);
+ --cards-color: oklch(from var(--base-color) calc(l * .38) calc(c * .2) h);
+ --secondary-cards-color: oklch(from var(--base-color) calc(l * .54) calc(c * .3) h);
+ --description-text-primary: oklch(from var(--base-color) calc(l * .8) calc(c * .1) h);
+ --description-text-second: oklch(from var(--base-color) calc(l * .99) calc(c * .2) calc(h * 97));
+ --primary-color-text: oklch(from var(--base-color) calc(l * 1.4) calc(c * .01) calc(h * 97));
+ --secondary-color-text: oklch(from var(--base-color) calc(l * 1.4) calc(c * .01) calc(h * 97));
+ --primary-background: oklch(from var(--base-color) calc(l * .18) calc(c * .2) calc(h * 97));
+ --secondary-background: oklch(from var(--base-color) calc(l * .31) calc(c * .1) h);
+ --secondary-border-color: oklch(from var(--base-color) calc(l * .5) calc(c * .7) calc(h * 95));
+ 
+ color-scheme: dark;
+}
+
+.cards-experience:after, .navbar .items.active, .pagination .items.active  {
+ border-radius: 0 0 8px 8px;
+ border-color: var(--main-color)!important;
+}
+
+.navbar .items.active, .pagination .items.active, .cards-experience:last-child::after {
+ border-color: var(--main-color);
+ background-color: var(--secondary-background)!important;
+}
+
+span div .description, .loading-content .wrapper .description, .cards-info .description, .navbar .items .title, .experience-header-title span, .wrapper-bar .box .percentage, .header-description
+.content .wrapper .quote-from, .wrapper-info-admin .description, .wrapper-bar .description, .banner .information .items, .description.time, #broadcast-message span .time, .form-input
+.box-description .description, .forms .form-input .wrapper-content #signup-method .wrapper:before, .auth-form .description, .type, .container-cards-users .wrapper-cards-users .info,
+.info-spotify-songs .info, .wrapper-spotify-list .input-search-spotify::placeholder {
+ color: var(--description-text-primary)!important;
+}
+
+.tooltip, .tooltip:before, .circle, .submit-button, .wrapper .submit-button {
+ color: var(--cards-color)!important;
+ background-color: var(--description-text-second)!important;
+}
+
+.carousel-box .bubble .wrapper .wrapper-tags .tags, .cards-icons .icon, .submit-button .icon, .wrapper-option .icon-content a:hover {
+ color: var(--cards-color)!important;
+}
+
+.cards, .bubble, .bubble:before, .button, .cards-experience, .cards-project, .cards-awards, .cards-awards:before, .cards-awards .experience-header-title:before, .cards-goals .heading-title:before, .cards-goals .heading-title:before, .banner, .forms .form-input .box-input .items-input
+.box-icon, .social-media .items, .social-media .items .wrapper, .popup, #wrapper-mood-picker .set-mood .mood #mood-icons, 
+#wrapper-mood-picker .set-mood .mood.active #mood-icons:before, #wrapper-mood-picker .box-description, #wrapper-mood-picker .set-mood .mood.selected .arrow:after, .tooltip-bear, #broadcast-message.wrapper, .tooltip, 
+.mbti-per .tooltip:before, .cards-options, .spotify-iframe .wrapper-iframe .info.preview {
+ background-color: var(--cards-color)!important;
+}
+
+.carousel-box .bubble .wrapper .box-image .box, .cards-awards .experience-header-title:before, .cards-goals .heading-title:before, .experience-header-title .box, .progress-box .box-icon, .container-language .box-icon, #awards
+.infinite-scroll-component__outerdiv .infinite-scroll-component:last-child:after, #updates .infinite-scroll-component__outerdiv .infinite-scroll-component:after, #notification-btn,
+.cards-experience:before, .cards-experience:after, .cards-experience:last-child:before, .cards-awards:last-child:after, #wrapper-todo .cards-awards:last-child:after,
+.wrapper-spotify-list .input-search-spotify {
+ border-color: var(--cards-color)!important;
+}
+
+ .bubble-calendar, .bubble-calendar.tomorrow {
+ background-color: var(--cards-color);
+ border-color: var(--cards-color);
+ }
+
+.header, .wrapper-section, .carousel-box .bubble .wrapper, .cards-project .media-social span .icon, .cards-project .media-social .icon, #awards .infinite-scroll-component__outerdiv
+.infinite-scroll-component:last-child:after, #updates .infinite-scroll-component__outerdiv .infinite-scroll-component:after, .cards-awards:last-child:after {
+ background-color: var(--secondary-background)!important;
+}
+
+.wrapper-action #lang .icon, .wrapper-action .box .icon, .navbar .items .icon, .pagination .items .icon, .box-icon .icon, .header-description .content .wrapper span, .greeting .info, .greeting .title,
+.bubble ion-icon, .client-info .info, .bubble-items, .bubble-items .description, .banner .description, .container-language .wrapper .description, .wrapper-bar .description,
+ #wrapper-action .icons, .popup .content
+.description i, .container-cards-users .box-avatar .icons, .settings-user {
+ color: var(--icon-color)!important;
+}
+
+.btn-modal, .btn-modal .icon {
+ color: oklch(from var(--icon-color) calc(l * .2) c h)!important;
+}
+
+.items.active .title, .items.active .icon, .carousel-box .bubble .description:before, .carousel-box .bubble .description:after, .header-description .content .quote:before {
+ color: var(--hightlight-color)!important;
+}
+
+body, .carousel-box .bubble .wrapper .box-image .box ,#notification-btn, .pagination, .box-option, .navbar, .cards-awards .experience-header-title span .items, .experience-header-title span .date, .bubble-items, .carousel-box .bubble .wrapper .wrapper-tags :not(.rfm-child) > .tags, .progress-bar, .banner .information .forwards, .banner .information .items, .banner .box-icon, .forms .form-input .box-input .items-input .input,
+.social-media .items .icon {
+ background-color: var(--primary-background)!important;
+}
+
+ .wrapper-content > .title:before, .sub-content > .title:before, .cards-awards .experience-header-title:before, .cards-goals .heading-title:before, .loader__balls__group :nth-child(1),
+ .loader__balls__group :nth-child(2), .loader__balls__group :nth-child(3), .marvel-device .camera, .marvel-device .camera:before {
+ background-color: var(--main-color);
+ }
+ 
+.social-media .items .wrapper .description {
+ color: var(--secondary-hightlight)!important;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active, .progress-bar .bar, .wrapper-content > .title.reverse:after, .forms .submit-button, .wrapper .submit-button, .window, .cards-awards
+.experience-header-title:before {
+ background-color: var(--main-color)!important;
+}
+
+.rocket .fin, .rocket .window {
+ background-color: oklch(from var(--main-color) calc(l * .8) c h)!important;
+}
+
+p, a, textarea, input, .title, .icon, .description, .cards .icon, .button, .cards-project .media-social span .icon, .cards-project .media-social .icon, .experience-description .items-list, .banner .description, .cards-icons
+.description, .form-input .box-input .items-input .box-icon .icon, .social-media .items .icon, .bubble-calendar .items > p, .material-symbols-outlined, .tooltip-bear, .option-button, .popup .content
+.description, .tooltip, .cards-options .list .item {
+ color: var(--primary-color-text)!important;
+}
+
+.header-description .box-admin .box {
+ border-color: var(--icon-color);
+}
+
+.cards-icons .icon {
+ background-color: var(--primary-color-text);
+}
+
+.pagination .items {
+ box-shadow: 0px -3px 2px var(--cards-color);
+}
+
+.cards-project .experience-description .description, .wrapper-info .description {
+ color: var(--description-text-second)!important;
+}
+
+.rocket-body .body {
+ background-color: var(--primary-color-text)!important;
+ }
+
+.progress-bar .bar {
+ background: linear-gradient(64deg, var(--main-color), var(--hightlight-color));
+}
+
+.header-description .box:before, .submit-button.secondary {
+ background-color: var(--description-text-primary)!important;
+}
+
+.carousel-image .header {
+ z-index: 60;
+ background-color: transparent!important;
+}
+ 
+.swiper-pagination .swiper-pagination-bullet {
+ background-color: var(--icon-color);
+}
+
+#wrapper-mood-picker .set-mood .mood #mood-icons {
+ background-color: oklch(from var(--cards-color) calc(l * .9) c h)!important;
+}
+
+.cards-experience .experience-header-title .box  {
+ background-color: white;
+}
+
+.cards-project .experience-header-title .box {
+ background-color: grey;
+}
+
+.cards-project .media-social span .icon, .cards-project .media-social .icon {
+ border: 3px solid;
+}
+
+.cards-project .media-social span .icon, .cards-project .media-social .icon, .banner .box-icon, .social-media .items .icon, .cards .icon, #wrapper-action, .checkbox-wrapper-12 .cbx input,
+#broadcast-message.wrapper, .forms .form-input .wrapper-content #signup-method .wrapper, .forms .form-input .wrapper-content #signup-method .wrapper .icon, .box-option, .container-cards-users,
+.container-cards-users .box-avatar, .cards-options {
+ border-color: var(--secondary-border-color)!important;
+}
+
+#hightlight, #highlight, .cards-icons .title, .cards-icons .title, .carousel-image .header .title, .highlighted {
+ color: var(--main-color)!important;
+}
+
+.carousel-image:before {
+ border-top: 4px solid var(--main-color);
+}
+
+.popup .wrapper button {
+ color: var(--primary-background);
+}
+
+.popup {
+ border: 3px solid var(--secondary-border-color);
+}
+
+.home-pages .shadow-box-swiper {
+box-shadow: 
+ inset -15px -0px 20px -5px var(--secondary-background),
+ inset 15px -0px 20px -5px var(--secondary-background);
+}
+
+.bubble-calendar {
+ background-color: transparent;
+}
+
+.bubble-calendar.yesterday, .bubble-calendar.selected {
+ background-color: transparent;
+ border-color: var(--primary-color-text)!important;
+}
+
+.bubble-calendar.today, #wrapper-mood-picker .set-mood .mood.selected #mood-icons, .wrapper-option .icon-content a .filled, .bubble-calendar.selected {
+ background-color: oklch(from var(--main-color) calc(l * .4) calc(c * 1) h)!important;
+ border-color: var(--primary-color-text)!important;
+}
+
+.bear::before, .btn-logout:hover {
+ background-color: oklch(from var(--cards-color) calc(l * 1.4) c h)!important;
+}
+
+#status {
+ overflow: visible;
+ border: 3.5px solid transparent;
+ border-image: linear-gradient(to right, var(--main-color), var(--hightlight-color));
+ border-image-slice: 1;
+}
+
+.other-pages section .wrapper-section .wrapper-content #broadcast-message .box-title #from {
+ background-color: var(--secondary-cards-color)!important;
+}
+
+.other-pages section .wrapper-section .wrapper-content .wrapper#broadcast-message:before {
+ background-color: var(--secondary-border-color);
+}
+
+#wrapper-mood-picker .set-mood .mood.selected #mood-icons,
+:is(.bubble-calendar.today, .bubble-calendar.selected) .items > p,
+:is(.bubble-calendar.today, .bubble-calendar.selected) .items .mood span, .submit-button.secondary, .submit-button.secondary .icon {
+ color: var(--secondary-color-text) !important;
+}
+
+.bubble-calendar .items .date, .bubble-calendar .items .day, .bubble-calendar .material-symbols-outlined, .wrapper-iframe .rfm-marquee-container .info.name, .wrapper-iframe .rfm-marquee-container .info.artist, .spotify-iframe .wrapper .icon {
+ color: var(--color)!important;
+}

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Bungee&family=Caveat+Brush&family=Ephesis&family=Frijole&family=Goldman:wght@400;700&family=Jersey+10&family=Orbitron:wght@400..900&family=Pattaya&family=Reenie+Beanie&family=Revalia&family=Russo+One&family=Sigmar&display=swap');
+
+.header #title-developer .badge:before, .header #custom-heading .role > span:before {
+ position: absolute;
+ content: '';
+ width: 37px;
+ height: 37px;
+ left: -2.3em;
+ bottom: -5px;
+ display: inline-block;
+ background-size: cover;
+ background-position: center;
+ background-image: url("/assets/badge.png");
+}
+
+.header #custom-heading .role > span:before {
+ content: 'Role : ';
+ width: auto;
+ left: 0;
+ height: auto;
+ position: static;
+ background-image: url("/");
+}
+
+.bubble:before {
+ content: '';
+ width: 25px;
+ z-index: -1;
+ height: 25px;
+ bottom: -10px;
+ border-radius: 5px;
+ position: absolute;
+ transform: rotate(45deg);
+}
+
+.carousel-box .bubble .description:before, .carousel-box .bubble .description:after, .header-description .content .quote:before {
+ z-index: 10;
+ right: 0px;
+ content: '"';
+ font-size: 30px;
+ position: absolute;
+ font-family: "Revalia", sans-serif;
+}
+
+#wrapper-mood-picker .set-mood .mood.selected .arrow:after {
+ content: "";
+ left: 10px;
+ width: 35px;
+ height: 35px;
+ bottom: .2em;
+ position: relative;
+ border-radius: 5px;
+ transform: rotate(45deg);
+}
+
+.carousel-box .bubble .description:before {
+ left: -25px;
+}
+
+.carousel-box .bubble .description:after {
+ right: 0px;
+}
+
+.header-description .content .quote:before {
+ top: -20px;
+ left: -5px;
+ font-size: 2.2rem;
+}
+
+.navbar .items.active .icon, .pagination .items.active .icon, .items.active .title, .items.active .icon {
+ transition: .5s ease-in all;
+}
+
+.cards-experience:before, .cards-experience:after, .cards-experience:last-child::before {
+ left: 0px;
+ height: 25%;
+ content: '';
+ bottom: -15%!important;
+ position: absolute;
+ border-left: 5px solid;
+}
+
+.header-description .content .wrapper span .icons:hover {
+ color: var(--hightlight-color);
+ }
+
+.cards-experience:after, #wrapper-todo .cards-awards:last-child:after {
+ left: 5%;
+ bottom: -23%;
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ border: 4px solid!important;
+}
+
+.cards-experience:last-child::before {
+ height: 300%;
+ bottom: -90%;
+ left: 0%!important;
+}
+
+.cards-experience:last-child::after, .cards-experience:last-child::before {
+ left: -4%;
+ border-radius: 50%;
+ bottom: -100%!important;
+}
+
+.forms .form-input .wrapper-content #signup-method .wrapper:before {
+ position: absolute;
+ content: attr(data-info);
+ font-size: 14px!important;
+ top: -30px;
+ font-weight: 600;
+}
+
+.bar.progress {
+ animation: progress 5s ease-in-out forwards
+}
+
+.hidden {
+ overflow-y: hidden;
+}
+
+.information ion-icon:hover, .pagination .active .icon, .media-social span .icon:hover, .media-social .icon:hover, .animate-popping {
+ animation: beat .4s ease-in-out;
+}
+
+.wrapper button:hover {
+ opacity: .8;
+ transform: scale(1.06);
+ transition: .3s ease-in-out!important;
+}
+
+.other-pages section .wrapper-section .wrapper-content .wrapper#broadcast-message .box-description::-webkit-scrollbar {
+ width: 0;
+ background: transparent;
+}
+
+.other-pages section .wrapper-section .wrapper-content .wrapper#broadcast-message .box-description .description:hover {
+ text-align: justify;
+ animation-play-state: paused!important;
+}
+
+.other-pages section .wrapper-section .wrapper-content .wrapper#broadcast-message:before {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 2px;
+ left: 0!important;
+ bottom: 2.6rem!important;
+}
+
+#wrapper-todo .cards-awards:last-child:after {
+ left: -15%!important;
+ top: 100%!important;
+ left: -17%!important;
+}
+
+@keyframes scrollUp {
+ 0% { transform: translateY(100%); }
+ 100% { transform: translateY(-105%); }
+}
+
+@keyframes beat {
+ 0%, 40% {
+  transform: scale(1);
+ } 50%, 60% {
+  transform: scale(.8);
+ } 100% {
+  transform: scale(1.15);
+ }
+}
+
+@keyframes progress {
+ 0% {
+   width: 0;
+   opacity: 1;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+@-webkit-keyframes nprogress-spinner {
+ 0%   { -webkit-transform: rotate(0deg); }
+ 100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+ 0%   { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+@keyframes loop {
+  0% {
+    background-color: var(--main-color);
+    width: 1px;
+    height: 1px;
+  }
+  100% {
+    background-color: rgba(0, 255, 0, 0);
+    width: 30px;
+    height: 30px;
+  }
+}

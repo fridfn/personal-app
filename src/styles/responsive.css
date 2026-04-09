@@ -1,0 +1,84 @@
+@media(min-width: 768px) {
+  body {
+   display: flex;
+   height: 100vh;
+   padding: 0!important;
+   align-items: center!important;
+   justify-content: center!important;
+  }
+  .marvel-device {
+   margin-top: 250px;
+  }
+  .loading-pages {
+   height: 90%;
+  }
+  .marvel-device .overflow {
+   display: none;
+  }
+  .marvel-device .screen {
+   padding: 0px!important;
+   overflow-y: scroll!important;
+   position: relative!important;
+   background: var(--primary-background-color)!important;
+  }
+  .marvel-device .screen:has(.history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .header.header-dashboard #header {
+   padding-top: 20px;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) {
+   position: relative!important;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .pagination.isTop .items {
+   z-index: 20;
+   top: 0!important;
+   padding-top: 35px;
+   position: sticky!important;
+   backdrop-filter: blur(3px);
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .navbar {
+   width: calc(100% - 15%);
+   bottom: 1.6rem!important;
+   left: calc(2rem);
+   overflow: hidden;
+   border-radius: 0 0 20px 20px!important;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .container-bear .main, .loading-content {
+   margin-bottom: 5rem!important;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .container-bear .main {
+   max-height: 10vmax;
+   transform: scale(1);
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .container-bear {
+   transform: scale(.4);
+   bottom: -4rem!important;
+   position: relative!important;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .loading-content .tooltip-bear {
+   left: 2rem;
+   bottom: -5rem!important;
+   position: relative!important;
+  }
+  .marvel-device .screen:has(.container, .history-pages, .other-pages, .showcase-pages, .dashboard-pages, .user-pages) .container-loading {
+   max-height: calc(100%);
+   overflow: hidden!important;
+  }
+  .marvel-device .camera {
+   position: absolute;
+   bottom: 5px;
+   left: 5px;
+   width: 6px;
+   height: 6px;
+   border-radius: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  .marvel-device .camera::before {
+   content: "";
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   border-radius: 25px;
+   animation: loop 1s 0s infinite;
+  }
+}
