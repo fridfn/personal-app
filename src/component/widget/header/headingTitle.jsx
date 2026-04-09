@@ -8,7 +8,7 @@ const HeadingTitle = ({ role }) => {
   const navigate = useNavigate()
   const { showLoading } = useLoadingContext()
   const localLanguage = localStorage.getItem("language") === "indonesian";
-  const titleDashboard = localLanguage ? "Personal Preview" : "Personal Previews";
+  const titleDashboard = localLanguage ? "Personal Preview" : "Personal Previews"; 
   
   return (
    <div className="wrapper" id="header">
