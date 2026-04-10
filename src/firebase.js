@@ -3,13 +3,13 @@ import { getDatabase } from "firebase/database";
 import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD-Ola-LmUx_xj1m0S1iq-zir26PWkMfNU",
-  authDomain: "fridfn-pwa-notif.firebaseapp.com",
-  databaseURL: "https://fridfn-pwa-notif-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "fridfn-pwa-notif",
-  storageBucket: "fridfn-pwa-notif.firebasestorage.app",
-  messagingSenderId: "352121530034",
-  appId: "1:352121530034:web:c551dc00a61c338ff98bab"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_DATABASE_URL,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);

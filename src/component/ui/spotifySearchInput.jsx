@@ -18,7 +18,7 @@ export default function SpotifySearchInput({ dateList, today }) {
   useEffect(() => {
     if (!q.trim() && q.length === 0) {
       const fetchInit = async () => {
-        const result = await searchSpotify("nadin_amizah");
+        const result = await searchSpotify({ query: "nadin_amizah" });
         setSongs(result);
         
         const rawLocal = localStorage.getItem("music");
@@ -38,7 +38,7 @@ export default function SpotifySearchInput({ dateList, today }) {
     const timeout = setTimeout(async () => {
       try {
         setLoading(true);
-        const result = await searchSpotify(q);
+        const result = await searchSpotify({ query: q });
         setSongs(result);
       } catch (err) {
         setError("EROR", err.message);
